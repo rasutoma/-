@@ -94,3 +94,57 @@ footer {
   margin-top: 60px;
   font-size: 14px;
 }
+
+/* スマホ対応（レスポンシブデザイン） */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 16px 10px;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 60px 10px;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 8px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+
+  .card a {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 18px 8px;
+    margin-top: 30px;
+    font-size: 13px;
+  }
+}
